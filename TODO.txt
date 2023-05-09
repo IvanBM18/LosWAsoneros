@@ -1,4 +1,5 @@
 -Agregar binary y ternary Search
 -Agregar codigos sobre matrices
 -Aritmetica Modular
--
+-Ejemplos de BackTracking y Recursion
+-Maybe DP basica(Knapsack y algun ejemplo mas)
