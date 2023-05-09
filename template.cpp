@@ -1,4 +1,5 @@
 //g++ -std=c++17 a.cpp && a < in.txt > out.txt
+//g++ -std=c++11 a.cpp && ./a < in.txt > out.txt
 #include<bits/stdc++.h>
 
 using namespace std;
