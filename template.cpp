@@ -3,7 +3,7 @@
 
 using namespace std;
 
-#define _ios_base :: sync_with_stdio(0);cin.tie(0);cout.tie(0);
+#define _ ios_base :: sync_with_stdio(0);cin.tie(0);cout.tie(0);
 #define ENDL '\n'
 #define f first
 #define s second
