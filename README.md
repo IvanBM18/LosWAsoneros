@@ -1,2 +1,2 @@
 # LosWasoneros
-Repo oficial de los wasoneros, newbies del ICPC 2023;
+Repo oficial de los Wasoneros, newbies del ICPC 2023;
