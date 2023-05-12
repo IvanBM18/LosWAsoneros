@@ -1,2 +1,5 @@
 -Agregar codigos sobre matrices
--
+-Aritmetica Modular
+-Ejemplos de BackTracking y Recursion
+-Meter el codigo para leer desde archivos
+-Maybe DP basica(Knapsack y algun ejemplo mas)
