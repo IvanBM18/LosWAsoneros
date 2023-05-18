@@ -24,7 +24,7 @@ lli sum(lli a, lli b){
 }
 
 lli substraction(lli a, lli b){
-    return (a+m-b)%m;
+    return ((a-b)+m)%m;
 }
 
 lli mul(lli a, lli b){
