@@ -19,30 +19,32 @@ typedef vector<lli> vi;
 
 const int m = 93875262;
 
-lli sum(lli a, lli b){
-    return ((a % m) + (b % m)) % m;
-}
+const lli mod = 1e9+7;
 
-lli substraction(lli a, lli b){
-    return ((a-b)+m)%m;
+lli sum(lli a, lli b){
+    return ((a%mod) + (b%mod))%mod;
 }
 
 lli mul(lli a, lli b){
-    return ((a % m) * (b % m)) % m;
+    return ((a % mod) * (b % mod)) % mod;
 }
 
-lli div(lli a, lli b){
-    return mul(a, inv(b));
+lli sub(lli a, lli b){
+    return ((a - b)+mod)%mod;
 }
 
-lli inv(lli a){
-    return modpow(a, m-2,m);
-}
-
-lli modpow(lli x, lli n, lli m){
-    if(n == 0) return 1%m;
-    lli u = modpow(x, n/2, m);
+lli modpow(lli x, lli n){
+    if(n == 1) return x%mod;    
+    if(n == 0) return 1%mod;
+    lli u = modpow(x, n/2);
     u = mul(u, u);
     if(n%2 == 1) u = mul(u, x);
     return u;
+}
+lli inv(lli a){
+    return modpow(a, mod-2);
+}
+
+lli division(lli a, lli b){
+    return mul(a, inv(b));
 }
