@@ -9,6 +9,7 @@ using namespace std;
 #define f first
 #define s second
 #define fore(i,a,b) for(int i = (a), ThxMK = (b); i < ThxMK; ++i)
+#define foren(i,a,b) for(int i=(a), ThxMK = (b); i<=ThxMK;++i) 
 #define pb push_back
 #define all(s) begin(s), end(s)
 #define sz(s) int(s.size())
