@@ -158,3 +158,41 @@ int main(){
     return 0;
 }
 
+//codigo para ver si en un vector de strings ninguna palabra se repite y si cada palabra empieza con la ultima letra de la anterior
+bool solve(const vector<string>w){
+    const int n = sz(w);
+    fore(i,0,(n-1)){
+        if(w[i].back() != w[i+1].front()){
+            return false;
+        }
+    }
+    fore(i,0,n){
+        fore(j,(i+1),n){
+            if(w[i]==w[j]){
+                return false;
+            }
+        }
+    }
+    return true;
+}
+
+vector<string>input(){
+    int n; 
+    cin>>n;
+    vector<string>w(n);
+    fore(i,0,n){
+        cin>>w[i];
+    }
+    return w;
+}
+
+int main(){_
+    const vector<string>w=input();
+    if(solve(w)){
+        cout<<"Yes"<<ENDL;
+    }
+    else{
+        cout<<"No"<<ENDL;
+    }
+}
+
