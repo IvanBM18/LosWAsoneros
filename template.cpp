@@ -1,5 +1,6 @@
 //g++ -std=c++17 a.cpp && a < in.txt > out.txt
 //g++ -std=c++11 a.cpp && ./a < in.txt > out.txt
+//g++ -std=c++11 a.cpp && ./a.out < in.txt > out.txt
 #include<bits/stdc++.h>
 using namespace std;
 #define _ ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
